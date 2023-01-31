@@ -80,7 +80,9 @@ class AddPassesJobConfigTest {
 
         // 추가된 PassEntity 값을 확인
         ArgumentCaptor<List> passEntitiesCaptor = ArgumentCaptor.forClass(List.class);
+        // passRepository.saveAll 메소드를 호출할때 리스트를 캡쳐
         verify(passRepository, times(1)).saveAll(passEntitiesCaptor.capture());
+        // 캡쳐된 파라미터 리스트를 추출
         final List<PassEntity> passEntities = passEntitiesCaptor.getValue();
 
         assertEquals(1, passEntities.size());
