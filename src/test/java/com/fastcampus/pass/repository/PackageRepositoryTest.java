@@ -1,9 +1,8 @@
 package com.fastcampus.pass.repository;
 
-import com.fastcampus.pass.packaze.PackageEntity;
-import com.fastcampus.pass.packaze.PackageRepository;
+import com.fastcampus.pass.repository.packaze.PackageEntity;
+import com.fastcampus.pass.repository.packaze.PackageRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

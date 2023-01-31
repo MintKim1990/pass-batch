@@ -1,4 +1,4 @@
-package com.fastcampus.pass.packaze;
+package com.fastcampus.pass.repository.packaze;
 
 import com.fastcampus.pass.BaseEntity;
 import lombok.*;
